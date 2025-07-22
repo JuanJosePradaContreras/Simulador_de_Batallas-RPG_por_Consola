@@ -12,6 +12,10 @@ Este proyecto representa no solo una base funcional de un videojuego estilo RPG 
 
 ## 🎥 Video Demostrativo
 
+!Explicación de principios Solid y de la programación orientada a Objetos POO!
+
+[![Ver en YouTube]()](https://youtu.be/unHfNgghvMQ)
+
 ¡Mira cómo funciona el juego en acción!  
 
 [![Ver en YouTube](https://img.youtube.com/vi/yAzeBvCreF8/hqdefault.jpg)](https://www.youtube.com/watch?v=yAzeBvCreF8)
