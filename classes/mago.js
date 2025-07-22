@@ -1,6 +1,6 @@
 // classes/Mago.js
 
-const Personaje = require('/Personaje');
+import Personaje from './personaje.js';
 
 /**
  * Clase que representa un Mago.
@@ -31,4 +31,4 @@ class Mago extends Personaje {
   }
 }
 
-module.exports = Mago;
+export default Mago;

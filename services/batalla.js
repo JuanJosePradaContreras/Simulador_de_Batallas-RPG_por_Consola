@@ -41,4 +41,4 @@ class BatallaService {
   }
 }
 
-module.exports = BatallaService;
+export default BatallaService

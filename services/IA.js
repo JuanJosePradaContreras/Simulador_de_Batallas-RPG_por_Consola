@@ -22,4 +22,4 @@ class IAService {
   }
 }
 
-module.exports = IAService;
+export default IAService;

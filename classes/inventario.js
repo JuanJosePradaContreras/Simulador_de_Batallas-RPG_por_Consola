@@ -45,13 +45,17 @@ class Inventario {
     }
 
     const objeto = this.objetos[indice];
-    objeto.aplicar(personaje);
-    console.log(`${personaje.nombre} ha usado ${objeto.nombre}.`);
+    if (typeof objeto.aplicar === 'function') {
+      objeto.aplicar(personaje);
+      console.log(`${personaje.nombre} ha usado ${objeto.nombre}.`);
 
-    // Eliminar objeto si es de un solo uso
-    if (objeto.consumible) {
-      this.objetos.splice(indice, 1);
-      console.log(`${objeto.nombre} ha sido consumido y eliminado del inventario.`);
+      // Eliminar objeto si es de un solo uso
+      if (objeto.consumible) {
+        this.objetos.splice(indice, 1);
+        console.log(`${objeto.nombre} ha sido consumido y eliminado del inventario.`);
+      }
+    } else {
+      console.log(`El objeto ${objeto.nombre} no se puede usar.`);
     }
   }
 
@@ -69,4 +73,4 @@ class Inventario {
   }
 }
 
-module.exports = Inventario;
+export default Inventario;

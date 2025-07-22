@@ -10,10 +10,11 @@ import Arquero from './classes/arquero.js';
 import Mago from './classes/mago.js';
 import Enemigo from './classes/enemigo.js';
 import Inventario from './classes/inventario.js';
-import PocionVida from './classes/pocionVida.js';
+ import PocionVida from './classes/pocionVida.js';
+ 
+import BatallaService from './services/batalla.js';
+import GuardadoService from './services/guardado.js';
 
-import * as BatallaService from './services/batalla.js';
-import * as GuardadoService from './services/guardado.js';
 
 // Lista en memoria de personajes creados en la sesión
 let personajes = [];

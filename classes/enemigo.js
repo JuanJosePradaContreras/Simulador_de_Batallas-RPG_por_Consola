@@ -1,6 +1,6 @@
 // classes/Enemigo.js
 
-const Personaje = require('/Personaje');
+import Personaje from './personaje.js';
 
 /**
  * Clase que representa a un Enemigo.
@@ -60,4 +60,4 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-module.exports = Enemigo;
+export default Enemigo;

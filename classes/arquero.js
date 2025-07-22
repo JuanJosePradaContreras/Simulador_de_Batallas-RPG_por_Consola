@@ -1,6 +1,6 @@
 // classes/Arquero.js
 
-const Personaje = require('/Personaje');
+import Personaje from './personaje.js';
 
 /**
  * Clase que representa un Arquero.
@@ -30,4 +30,4 @@ class Arquero extends Personaje {
   }
 }
 
-module.exports = Arquero;
+export default Arquero;

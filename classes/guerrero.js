@@ -1,7 +1,6 @@
 // classes/Guerrero.js
 
-const Personaje = require('/Personaje');
-
+import Personaje from './personaje.js';
 /**
  * Clase que representa un Guerrero.
  * Extiende de la clase Personaje.
@@ -31,4 +30,4 @@ class Guerrero extends Personaje {
   }
 }
 
-module.exports = Guerrero;
+export default Guerrero;

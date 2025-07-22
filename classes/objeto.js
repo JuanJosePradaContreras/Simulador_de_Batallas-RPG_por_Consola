@@ -27,4 +27,4 @@ class Objeto {
   }
 }
 
-module.exports = Objeto;
+export default Objeto;

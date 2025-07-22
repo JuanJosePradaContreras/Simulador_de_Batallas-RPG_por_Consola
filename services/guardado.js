@@ -1,7 +1,11 @@
-// services/GuardadoService.js 2
+// ✅ services/guardado.js (versión lista para usar con módulos ES)
+import fs from 'fs-extra';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const fs = require('fs-extra');
-const path = require('path');
+// Simulación de __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 /**
  * Servicio para guardar y cargar personajes en archivos JSON locales.
@@ -55,4 +59,4 @@ class GuardadoService {
   }
 }
 
-module.exports = GuardadoService;
+export default GuardadoService;
